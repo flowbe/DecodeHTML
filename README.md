@@ -10,11 +10,15 @@ This extension add 2 properties to String.
 
 ### htmlToString
 
-ˋlet myHtmlString = "C&rsquo;est la France"
-println("\(myHtmlString.htmlToString)") // prints "C'est la France"`
+ˋˋˋ
+let myHtmlString = "C&rsquo;est la France"
+println("\(myHtmlString.htmlToString)") // prints "C'est la France"
+ˋˋˋ
 
 ### htmlToNSAttributedString
 
-ˋlet myHtmlString = "C&rsquo;est la France"
+ˋˋˋ
+let myHtmlString = "C&rsquo;est la France"
 let label = UILabel()
-label.attributedString = myHtmlString.htmlToNSAttributedString`
+label.attributedText = myHtmlString.htmlToNSAttributedString
+ˋˋˋ
