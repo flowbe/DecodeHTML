@@ -9,13 +9,12 @@ import Foundation
 
 extension String {
     var htmlToString: String? {
-        return htmlToNSAttributedString?.string
+        return htmlToAttributedString?.string
     }
 
-    var htmlToNSAttributedString: NSAttributedString? {
+    var htmlToAttributedString: NSAttributedString? {
         if let data = data(using: .utf8) {
             return try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: Encoding.utf8], documentAttributes: nil)
-
         }
         return nil
     }
