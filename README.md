@@ -13,7 +13,7 @@ dependencies: [
 
 ## Usage
 
-This extension add 2 properties to `String`.
+This package adds 2 properties to `String`.
 
 - `htmlToString`:
 
